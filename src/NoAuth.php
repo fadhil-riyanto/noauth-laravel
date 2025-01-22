@@ -30,4 +30,22 @@ class NoAuth {
 
                 return false;
         }
+
+        public static function verify(Request $req)
+        {
+                $envdata = new readEnv();
+
+                /**
+                 * do not check
+                 */
+
+                if ($req->session()->get('_noauth_user_number') == null && $req->session()->get('_noauth_pass') == null) {
+                        return false;
+                }
+
+                $passwd = $envdata->get_passwd_by_id($req->session()->get('_noauth_user_number'));
+                
+                return password_verify($passwd, $req->session()->get('_noauth_pass'));
+        }
+        
 }

@@ -49,4 +49,11 @@ class readEnv
         {
                 return password_hash($this->exp[$this->idx], PASSWORD_ARGON2I);
         }
+
+        public function get_passwd_by_id($id) {
+                $this->noauth_get_env_str();
+                $this->noauth_exp();
+                
+                return $this->exp[$id];
+        }
 }
