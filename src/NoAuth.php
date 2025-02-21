@@ -47,5 +47,11 @@ class NoAuth {
                 
                 return password_verify($passwd, $req->session()->get('_noauth_pass'));
         }
+
+        public static function logout(Request $req) {
+                $req->session()->forget('_noauth_user_number');
+                $req->session()->forget('_noauth_pass');
+                $req->session()->flush();
+        }
         
 }
