@@ -2,7 +2,7 @@
 
 namespace Fadhilriyanto\Noauthlaravel;
 
-class readEnv
+class ReadEnvRecord
 {
         protected $noauth_str;
         protected $idx;

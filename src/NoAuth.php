@@ -13,7 +13,7 @@ class NoAuth {
                         throw new Exception("password required");
                 }
 
-                $envdata = new readEnv();
+                $envdata = new ReadEnvRecord();
                 $ret = $envdata->noauth_check($req->password);
 
                 // dd($req->password);
@@ -33,7 +33,7 @@ class NoAuth {
 
         public static function verify(Request $req)
         {
-                $envdata = new readEnv();
+                $envdata = new ReadEnvRecord();
 
                 /**
                  * do not check
