@@ -1,12 +1,12 @@
 <?php
 
-namespace FadhilRiyanto\NoAuthLaravel;
+namespace Fadhilriyanto\Noauthlaravel;
 
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-use FadhilRiyanto\NoAuthLaravel;
+use Fadhilriyanto\Noauthlaravel;
 
 class NoAuthMiddleware
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace FadhilRiyanto\NoAuthLaravel;
+namespace Fadhilriyanto\Noauthlaravel;
 
 class readEnv
 {

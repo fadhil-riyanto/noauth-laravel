@@ -1,6 +1,6 @@
 <?php
 
-namespace FadhilRiyanto\NoAuthLaravel;
+namespace Fadhilriyanto\Noauthlaravel;
 
 use Exception;
 use Illuminate\Http\Request;
